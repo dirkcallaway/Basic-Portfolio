@@ -1,21 +1,32 @@
+.clearfix::after{
+    content:"";
+    clear: both;
+    display:both;
+}
+
 #header{
     background-color: #ffffff;
+    overflow: hidden;
+    border-bottom: solid #dddddd;
+    border-width: 2px;
 }
 
 #mainContent{
-    clear: both;
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
     width:960px;
     border-color: #dddddd;
-    background-color: #ffffff;
     padding: 15px;
+    border-width: 2px;
+    border-style: solid;
 }
 #banner{
     width:960px;
     margin-left: auto;
     margin-right: auto;
+    padding: 30px;
+    position: static;
 }
 
 #nameTag{
@@ -23,6 +34,9 @@
     background-color: #4aaaa5;
     color:#ffffff;
     padding:15px;
+    margin:0px;
+    /* position: absolute;
+    left:0%; */
 }
 
 #navLinks{
@@ -33,17 +47,20 @@
 
 #copyright{
     text-align: center;
-    vertical-align: baseline;
+    bottom:0;
 }
 
 footer{
     background-color: #666666;
     height:35px;
     border-top: 5px solid #4aaaa5;
+    position: relative;
 }
 
 #bigBox{
     background-image: url("../images/terrazzo.png");
+    padding-top: 30px;
+    padding-bottom: 90px;
 }
 
 p{
