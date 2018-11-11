@@ -1,9 +1,3 @@
-.clearfix::after{
-    content:"";
-    clear: both;
-    display:both;
-}
-
 #header{
     background-color: #ffffff;
     overflow: hidden;
@@ -102,5 +96,26 @@ button{
     text-decoration: none;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     border:none;
-    opacity: 100%;
+}
+
+.caption{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:#ffffff;
+    background-color: #4aaaa5;
+    font-size: 16px;
+    text-align: center;
+    padding:7px;
+    position: relative;
+    bottom:45px;
+}
+
+.portfolioPics{
+    margin: 15px 15px 0 15px;
+    float: left;
+}
+
+.clearfix::after{
+    content:"";
+    clear:both;
+    display: table;
 }
