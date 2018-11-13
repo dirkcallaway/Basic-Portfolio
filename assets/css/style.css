@@ -13,9 +13,9 @@
     background-color: #ffffff;
     width:960px;
     border-color: #dddddd;
-    padding: 15px;
     border-width: 2px;
     border-style: solid;
+    border-radius: 4px;
 }
 #banner{
     width:960px;
@@ -29,25 +29,27 @@
     background-color: #4aaaa5;
     color:#ffffff;
     padding:15px;
-    margin:0px;
+    margin-bottom: 0;
+    border-radius:4px 4px 0 0;
 }
 
 #navLinks{
     float: right;
     padding: 5px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    margin:0px;
+    margin-top: 25px;
 }
 
 #copyright{
     text-align: center;
     bottom:0;
+    color:#dddddd;
 }
 
 footer{
     background-color: #666666;
     height:35px;
-    border-top: 5px solid #4aaaa5;
+    border-top: 8px solid #4aaaa5;
     position: relative;
 }
 
@@ -60,32 +62,44 @@ footer{
 p{
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    clear: none;
+    padding: 0 20px 0 20px;
 }
 
 h1, h2, h3, h4, h5{
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
+    padding: 5px 20px 5px 20px;
 }
 
 hr{
-    background-color: #777777;
+    border:1px solid #dddddd;
+    width:920px;
 }
 
-#profilePic{
+#imgContainer{
     float:left;
+    margin: 15px 15px 0px 20px;
 }
 
 a{
     color:#777777;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#4aaaa5;
 }
 
 input{
-    width:100%;
+    width:95%;
+    margin-left: 20px;
+
 }
 
 textarea{
-    width:100%;
+    width:95%;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 button{
@@ -96,6 +110,11 @@ button{
     text-decoration: none;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     border:none;
+    margin:0 0 15px 20px;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: #623CE8;
 }
 
 .caption{
@@ -107,6 +126,7 @@ button{
     padding:7px;
     position: relative;
     bottom:45px;
+    opacity:0;
 }
 
 .portfolioPics{
@@ -114,8 +134,30 @@ button{
     float: left;
 }
 
+.portfolioPics:hover .caption{
+    opacity: 1;
+}
+
 .clearfix::after{
     content:"";
     clear:both;
     display: table;
+}
+
+::placeholder{
+    color:#777777;
+}
+::-ms-input-placeholder{  /*MS Edge */
+    color:#777777;
+}
+:-ms-input-placeholder{ /*MS Explorer 10-11 */
+    color:#777777;
+}
+
+input:focus{
+    outline-color: #4aaaa5;
+}
+
+textarea:focus{
+    outline-color: #4aaaa5;
 }
